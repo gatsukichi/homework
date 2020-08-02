@@ -3,13 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>9기 신승길</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+
+    <script>
+        function value_out(){
+            let inval=$("#in").val();
+            console.log(inval)
+            $("#value").append(inval);
+        }
+
+    </script>
     <body>
         <div>
             테스트 페이지입니다.
         </div>
         <div>
             슬랙 알림 테스트입니다.
+            <input id="in"/>
+            <button onclick="value_out()">눌러</button>
         </div>
+        <p1 id="value"></p1>
     </body>
 </html>
